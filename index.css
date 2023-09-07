@@ -1,18 +1,19 @@
 body {
-    background-color: #2f0336;
+    background-color: #350d36;
 }
+
 #card-container {
-    width: 500px;
+    width: 35vw;
     margin: 20px auto;
     text-align: center;
-    padding: 20px;
-    height: 500px;
+    padding: 1.5vw;
+    height: 38vw;
     color: #fff;
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(7.5px);
     -webkit-backdrop-filter: blur(7.5px);
     box-shadow: 4px 3px 13px 0px rgba(0, 0, 0, 0.75);
-    border-radius: 10px;
+    border-radius: 0.75vw;
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-top: 1px solid rgba(255, 255, 255, 0.5);
     border-left: 1px solid rgba(255, 255, 255, 0.5);
@@ -21,8 +22,8 @@ body {
 
 [data-testid=slackDisplayImage] {
     margin: 0 auto;
-    border-radius: 15px;
-    width: 300px;
+    border-radius: 1.11vw;
+    width: 22vw;
 }
 
 
@@ -37,6 +38,14 @@ body {
 [data-testid=slackUserName] {
     margin-bottom: 0;
     color: #fff;
+    font-size: 2.97vw;
+    font-weight: 700
+}
+
+[data-testid=myTrack] {
+    font-weight: 700;
+    font-size: 1.78vw;
+    margin-top: 0;
 }
 
 #date-link {
@@ -49,12 +58,43 @@ body {
     text-decoration: none;
     background-color: #20883d;
     color: #fff;
-    padding: 10px 20px;
-    border-radius: 10px;
+    padding: 0.75vw 1.5vw;
+    border-radius: 0.75vw;
     border: 1px #2b7240 solid;
+    font-size: 1.5vw;
+}
+
+[data-testid=githubURL]:hover {
+    background-color: #2b7240;
 }
 
 #day-time {
     display: flex;
-    gap: 20px;
+    gap: 1.5vw;
+}
+
+@media (max-width: 768px) {
+    #card-container {
+        width: 80vw;
+        height: 85vw;
+    }
+
+    [data-testid=slackDisplayImage] {
+        width: 50vw;
+        border-radius: 50vw;
+    }
+
+    [data-testid=slackUserName] {
+        font-size: 6.5vw;
+    }
+
+    [data-testid=myTrack] {
+        font-size: 3.5vw;
+    }
+
+    [data-testid=githubURL] {
+        padding: 2.5vw 3.1vw;
+        border-radius: 2.5vw;
+        font-size: 3vw;
+    }
 }

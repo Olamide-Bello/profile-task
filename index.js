@@ -12,9 +12,9 @@ const today= new Date()
 let dayOfTheWeek= days[today.getDay()]
 document.getElementById("currentDayOfTheWeek").textContent = dayOfTheWeek;
 
-const addZero = (time) => {
-    if (time < 10) {time = "0" + time}
-  return time;
+const addZero = (t) => {
+    if (t < 10) {t = "0" + t}
+  return t;
 }
 
 let h = addZero(today.getUTCHours())
