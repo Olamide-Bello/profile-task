@@ -1,0 +1,60 @@
+body {
+    background-color: #2f0336;
+}
+#card-container {
+    width: 500px;
+    margin: 20px auto;
+    text-align: center;
+    padding: 20px;
+    height: 500px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    box-shadow: 4px 3px 13px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    
+}
+
+[data-testid=slackDisplayImage] {
+    margin: 0 auto;
+    border-radius: 15px;
+    width: 300px;
+}
+
+
+
+#image-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+[data-testid=slackUserName] {
+    margin-bottom: 0;
+    color: #fff;
+}
+
+#date-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+[data-testid=githubURL] {
+    text-decoration: none;
+    background-color: #20883d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px #2b7240 solid;
+}
+
+#day-time {
+    display: flex;
+    gap: 20px;
+}
